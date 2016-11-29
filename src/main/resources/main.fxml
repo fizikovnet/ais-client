@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.views.MainView">
+    <children>
+        <AnchorPane prefHeight="30.0" prefWidth="800.0">
+         <children>
+            <Button layoutY="3.0" mnemonicParsing="false" onAction="#getListFiles" text="Получить список файлов на сервере" />
+         </children>
+        </AnchorPane>
+        <AnchorPane prefHeight="570.0" prefWidth="800.0">
+            <children>
+                <HBox prefHeight="565.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                    <children>
+                  <ListView fx:id="listView" prefHeight="570.0" prefWidth="432.0" />
+                  <ImageView fx:id="imgView" fitHeight="570.0" fitWidth="400.0" pickOnBounds="true" preserveRatio="true" />
+                    </children></HBox>
+            </children>
+        </AnchorPane>
+    </children>
+</VBox>
